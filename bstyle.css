@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: #fff8e7;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+h1 {
+    color: #fad6a5 ;
+    font-size: 4em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+/* ---------------- Header NavBar ---------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/coffee-blog.jpg');
+    width: 100%;
+    height: 100%;
+    min-height: 90vh;
+    padding: 0 3rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 13rem;
+    background: url(./img/wave-large.png) center no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2rem 3rem; 
+}
+
+.logo {
+    width: 6%;
+    display: block;
+    border-radius: 50%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column ;
+}
+
+header ul li {
+    padding: 1rem 2rem;
+    list-style: none;
+    background-image: radial-gradient(circle farthest-side, #efdfbb, #fad6a5);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    background-image: radial-gradient(circle farthest-side, #fff8e7, #ffe4b5);
+    transition: border-bottom 0.2s;
+    border-bottom: 3px solid #f55d3e;
+}
+
+header ul li a {
+    color: #3c1414;
+    font-weight: 500;
+}
+
+/* ---------------- Header Contend ---------------- */
+
+.header-contend {
+    position: absolute;
+    width: 50%;
+    top: 35%;
+}
+
+.header-contend h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.header-title {
+    color: #f55d3e;  
+}
+
+.header-contend p {
+    margin: 1rem 0;
+}
+
+button {
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    border: 1px outset buttonborder;
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: radial-gradient(circle farthest-side, #efdfbb, #fad6a5);
+    color: #3c1414;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: radial-gradient(circle farthest-side, #fff8e7, #ffe4b5);
+    transition: all 0.3s ease-in;
+}
+
+/* -------------- Sections  ---------------- */
+
+
+
+/* -------------- BlogSection  ---------------- */
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    color: #1d0a0a;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.blog-box {
+    margin-bottom: 1rem;
+    padding: 2rem;
+    width: 25%;
+    text-align: center;
+    border: 1px solid #1d0a0a;
+    border-style: dotted;
+    background-color: #efdfbb;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-radius: 30px;
+}
+
+.blog-box img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border-style: dotted;
+    border-color: #3c1414;
+}
+
+.blog-box h5 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.blog-box p {
+    padding: 1rem 0;
+}
+
+.blog-box a {
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    border: 1px outset buttonborder;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #3c1414;
+    color: #efdfbb;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.blog-box a:hover {
+    color: #3c1414;
+    background-image: radial-gradient(circle farthest-side, #fff8e7, #ffe4b5);
+    transition: all 0.3s ease-in;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+}
+
+/* -------------------- Footer -------------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #efdfbb;
+    padding: 2rem 3 rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/cafe.jpg');
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer h3 {
+    padding-top: 2rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    border: 2px outset buttonborder;
+    border-color: #fff8e7;
+    color: #fff8e7;
+    font-weight: 700;
+}
+
+footer a {
+    margin-right: .6rem;
+    padding: .8rem 1.6rem;
+    font-weight: 700;
+    background-image: radial-gradient(circle farthest-side, #fff8e7, #ffe4b5);
+    color: #3c1414;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+footer a:hover {
+    background-image: radial-gradient(circle farthest-side, #fff8e7, #ffe4b5);
+    transition: border-bottom 0.4s;
+}
+
+footer p {
+    padding-bottom: 1rem;
+}
+
+
+
+
+
